@@ -1,0 +1,34 @@
+{
+    "transparency16": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "level1": {
+        "id": "level1",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDAyMDkwOTA5MDkwOTA5MDkwOTA5MDkwOTA5MDkwOTAxMDgwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDYwODAzMDMwMzBhMDMwMzAzMGEwMzAzMGEwMzAzMDMwNjA4MDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzA2MDgwMzAzMDMwMzAzMDMwYTAzMDMwMzAzMDMwMzBhMDYwODAzMDMwYTAzMDMwMzAzMDMwYTAzMDMwMzAzMGEwNjA4MDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzA2MDgwMzAzMDMwMzBhMDMwMzAzMDMwMzAzMDMwMzAzMDYwODAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwMzAzMDMwNjA4MDMwMzAzMDMwMzAzMGEwMzAzMDMwMzAzMDMwMzA2MDgwOTA5MDkwYjAxMDMwMzAzMDMwMzAzMDMwMzAzMDYwODBkMDMwMzBhMDYwMzAzMDMwMzAzMDMwMzAzMDMwNjA4MDMwMzAzMDMwNjAzMDMwMzAzMDMwMzAzMDMwMzA2MDgwMzAzMDMwMzA2MGMwMzAzMDMwMzAzMDMwYTAzMDYwODAzMDMwMzAzMDYwMzAzMDMwMzAzMDMwMzAzMDMwNjA0MDcwNzA3MDcwNzA3MDcwNzA3MDcwNzA3MDcwNzA1MjIyMjIyMjIyMjIyMjIyMjAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDAyMDAwMDAwMDAwMDAwMjAwMjAwMDAwMDAwMDAwMDIwMDIwMDAwMDAwMDAwMDAyMDIyMjIyMDAwMDAwMDAwMjAwMjAwMjAwMDAwMDAwMDIwMDIwMDIwMDAwMDAwMDAyMDAyMDAyMDAwMDAwMDAwMjAwMjAwMjAwMDAwMDAwMDIwMjIyMjIyMjIyMjIyMjIyMg==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.dungeon.greenOuterNorthEast",
+            "sprites.dungeon.greenOuterNorthWest",
+            "sprites.dungeon.floorLight0",
+            "sprites.dungeon.greenOuterSouthEast",
+            "sprites.dungeon.greenOuterSouthWest",
+            "sprites.dungeon.greenOuterEast0",
+            "sprites.dungeon.greenOuterSouth0",
+            "sprites.dungeon.greenOuterWest1",
+            "sprites.dungeon.greenOuterNorth0",
+            "sprites.dungeon.floorLight4",
+            "sprites.dungeon.stairEast",
+            "sprites.dungeon.floorLight1",
+            "sprites.dungeon.chestClosed"
+        ],
+        "displayName": "level1"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myTiles"
+    }
+}
