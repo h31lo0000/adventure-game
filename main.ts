@@ -1,21 +1,141 @@
-let mySprite = sprites.create(img`
-    . . . . . . f f f f . . . . . . 
-    . . . . f f f 2 2 f f f . . . . 
-    . . . f f f 2 2 2 2 f f f . . . 
-    . . f f f e e e e e e f f f . . 
-    . . f f e 2 2 2 2 2 2 e e f . . 
-    . . f e 2 f f f f f f 2 e f . . 
-    . . f f f f e e e e f f f f . . 
-    . f f e f b f 4 4 f b f e f f . 
-    . f e e 4 1 f d d f 1 4 e e f . 
-    . . f e e d d d d d d e e f . . 
-    . . . f e e 4 4 4 4 e e f . . . 
-    . . e 4 f 2 2 2 2 2 2 f 4 e . . 
-    . . 4 d f 2 2 2 2 2 2 f d 4 . . 
-    . . 4 4 f 4 4 5 5 4 4 f 4 4 . . 
-    . . . . . f f f f f f . . . . . 
-    . . . . . f f . . f f . . . . . 
+controller.up.onEvent(ControllerButtonEvent.Pressed, function () {
+    shark.setImage(img`
+        ...........fffffff...ccfff..........
+        ..........fbbbbbbbffcbbbbf..........
+        ..........fbb111bbbbbffbf...........
+        ..........fb11111ffbbbbff...........
+        ..........f1cccc1ffbbbbbcff.........
+        ..........ffc1c1c1bbcbcbcccf........
+        ...........fcc3331bbbcbcbcccf..ccccc
+        ............c333c1bbbcbcbccccfcddbbc
+        ............c333c1bbbbbbbcccccddbcc.
+        ............c333c11bbbbbccccccbbcc..
+        ...........cc331c11bbbbccccccfbccf..
+        ...........cc13c11cbbbcccccbbcfccf..
+        ...........c111111cbbbfdddddc.fbbcf.
+        ............cc1111fbdbbfdddc...fbbf.
+        ..............cccfffbdbbfcc.....fbbf
+        ....................fffff........fff
+        `)
+})
+controller.left.onEvent(ControllerButtonEvent.Pressed, function () {
+    monkeyy.setImage(img`
+        . . . . c c c c c . . . . . . . 
+        . . c c 5 5 5 5 5 c . . . . . . 
+        . c 5 5 5 5 1 f 5 5 c . . . . . 
+        c 5 5 5 5 5 f f 5 5 5 c . . . . 
+        c 5 5 5 5 5 5 5 5 5 5 5 c . . . 
+        c c b b 1 b 5 5 5 5 5 5 c . . . 
+        c 5 3 3 3 5 5 5 5 5 5 5 d c . . 
+        c 5 3 3 3 5 5 5 5 5 d d d c . . 
+        . c 5 5 5 5 b 5 5 5 d d d c . . 
+        . . c b b c 5 5 b d d d d c . . 
+        . c b b c 5 5 b b d d d d c c c 
+        . c c c c c c d d d d d d d d c 
+        . . . . c c c b 5 5 b d d d c . 
+        . . . . . c d 5 5 b b c c c . . 
+        . . . . c c c c c c c . . . . . 
+        . . . . c b b b c . . . . . . . 
+        `)
+})
+controller.right.onEvent(ControllerButtonEvent.Pressed, function () {
+    monkeyy.setImage(img`
+        ........................
+        ............cc..........
+        ............ccc.........
+        ........ccc.ccccccc.....
+        ........ccccc555555cc...
+        ........ccb5555555555c..
+        .....ccc.b55555ff15555c.
+        .....cccb5555555ff55555c
+        ......cb555555555555d55c
+        ....c.b555555555bb55555c
+        ....ccb555ddd5555b13bbc.
+        ....ccd55ddddd555b3335c.
+        .....cdd5ddddddd55b335c.
+        ...c.bddddb555bbbd555c..
+        ...ccdddddbb55555bccc...
+        ...ccdddddddcc555bcc....
+        ...ccddddddddbcccbcccc..
+        .ccbddddddd55dbbbbc55c..
+        ccddddddddd555dbbcc5c...
+        cddddddbbbdd555bbccc....
+        .ccddddbbbbdd55bcc......
+        ...cccbbbbbdddbcddcc....
+        .....cccccdd555dcccc....
+        ..........cccccc........
+        `)
+})
+controller.down.onEvent(ControllerButtonEvent.Pressed, function () {
+    shark.setImage(img`
+        .............ccfff..............
+        ............cddbbf..............
+        ...........cddbbf...............
+        ..........fccbbcf............ccc
+        ....ffffffccccccff.........ccbbc
+        ..ffbbbbbbbbbbbbbcfff.....cdbbc.
+        ffbbbbbbbbbcbcbbbbcccff..cddbbf.
+        fbcbbbbbffbbcbcbbbcccccfffdbbf..
+        fbbb1111ff1bcbcbbbcccccccbbbcf..
+        .fb11111111bbbbbbcccccccccbccf..
+        ..fccc33cc11bbbbccccccccfffbbcf.
+        ...fc131c111bbbcccccbdbc...fbbf.
+        ....f33c111cbbbfdddddcc.....fbbf
+        .....ff1111fbdbbfddcc........fff
+        .......cccccfbdbbfc.............
+        .............fffff..............
+        `)
+})
+let shark: Sprite = null
+let monkeyy: Sprite = null
+info.setScore(0)
+info.setLife(3)
+monkeyy = sprites.create(img`
+    ........................
+    ............cc..........
+    ............ccc.........
+    ........ccc.ccccccc.....
+    ........ccccc555555cc...
+    ........ccb5555555555c..
+    .....ccc.b55555ff15555c.
+    .....cccb5555555ff55555c
+    ......cb555555555555d55c
+    ....c.b555555555bb55555c
+    ....ccb555ddd5555b13bbc.
+    ....ccd55ddddd555b3335c.
+    .....cdd5ddddddd55b335c.
+    ...c.bddddb555bbbd555c..
+    ...ccdddddbb55555bccc...
+    ...ccdddddddcc555bcc....
+    ...ccddddddddbcccbcccc..
+    .ccbddddddd55dbbbbc55c..
+    ccddddddddd555dbbcc5c...
+    cddddddbbbdd555bbccc....
+    .ccddddbbbbdd55bcc......
+    ...cccbbbbbdddbcddcc....
+    .....cccccdd555dcccc....
+    ..........cccccc........
     `, SpriteKind.Player)
-controller.moveSprite(mySprite)
+shark = sprites.create(img`
+    ...........fffffff...ccfff..........
+    ..........fbbbbbbbffcbbbbf..........
+    ..........fbb111bbbbbffbf...........
+    ..........fb11111ffbbbbff...........
+    ..........f1cccc1ffbbbbbcff.........
+    ..........ffc1c1c1bbcbcbcccf........
+    ...........fcc3331bbbcbcbcccf..ccccc
+    ............c333c1bbbcbcbccccfcddbbc
+    ............c333c1bbbbbbbcccccddbcc.
+    ............c333c11bbbbbccccccbbcc..
+    ...........cc331c11bbbbccccccfbccf..
+    ...........cc13c11cbbbcccccbbcfccf..
+    ...........c111111cbbbfdddddc.fbbcf.
+    ............cc1111fbdbbfdddc...fbbf.
+    ..............cccfffbdbbfcc.....fbbf
+    ....................fffff........fff
+    `, SpriteKind.Enemy)
+controller.moveSprite(monkeyy)
+scene.cameraFollowSprite(monkeyy)
 tiles.setCurrentTilemap(tilemap`level1`)
-scene.cameraFollowSprite(mySprite)
+shark.follow(monkeyy, 60)
+shark.setPosition(randint(20, 300), randint(20, 400))
